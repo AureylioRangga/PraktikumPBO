@@ -19,5 +19,5 @@ public class RumahSakitDemo {
         Pasien pasien2 = new Pasien("997744", "Yenny Anggreaeni");
         System.out.println(pasien2.getInfo());
     }
-}
+} 
 

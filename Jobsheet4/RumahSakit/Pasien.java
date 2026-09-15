@@ -54,7 +54,7 @@ public class Pasien {
             info += "Belum ada riwayat konsultasi";
         }
 
-        info += "\n";
+        info += "\n"; 
 
 
         return info;        

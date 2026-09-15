@@ -29,7 +29,7 @@ public Pegawai getPerawat() {
 
 public void setPerawat(Pegawai perawat) { 
     this.perawat = perawat; 
-}
+} 
 
 public String getInfo() {
     String info = "";

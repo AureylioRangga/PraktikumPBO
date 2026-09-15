@@ -14,7 +14,7 @@ public Pegawai(String nip, String nama) {
 public String getNip() {
     return nip = nip;
 } 
-
+ 
 public void setNip(String nip) {
     this.nip = nip;
 }
