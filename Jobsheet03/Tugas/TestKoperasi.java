@@ -9,7 +9,7 @@ public class TestKoperasi
         System.out.println("Limit Pinjaman: " + anggota1.getLimitPinjaman());
 
         System.out.println("\nMeminjam uang 10.000.000");
-        anggota1.pinjam(1000000);
+        anggota1.pinjam(10000000);
         System.out.println("Jumlah pinjaman saat ini: " + anggota1.getJumlahPinjaman());
 
         System.out.println("\nMeminjam uang 4.000.000");

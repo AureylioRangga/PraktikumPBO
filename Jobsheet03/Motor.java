@@ -27,6 +27,7 @@ public class Motor {
         this.platNomor = platNomor;
     }
 
+    
     public boolean isIsMesinOn() {
         return isMesinOn;
     }
