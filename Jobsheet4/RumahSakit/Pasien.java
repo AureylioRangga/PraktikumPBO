@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Pasien {
     private String noRekamMedis;
     private String nama;
-    private ArrayList<Konsultasi> riwayatKonsultasi;
+    private ArrayList<Konsultasi> riwayatKonsultasi; // keranjang
 
     public Pasien(String noRekamMedis, String nama) {
         this.noRekamMedis = noRekamMedis;
@@ -14,21 +14,20 @@ public class Pasien {
         this.riwayatKonsultasi = new ArrayList<Konsultasi>();
     }
     
+    // getter setter biasa untuk norekmamedis dan nama
     public String getNoRekamMedis () {
         return noRekamMedis;
     }
-
     public void setNoRekamMedis(String noRekamMedis) {
         this.noRekamMedis = noRekamMedis;
     }
-
     public String getNama() {
         return nama;
     }
-
     public void setNama(String nama) {
         this.nama = nama;
     }
+
 
     public void tambahKonsultasi(LocalDate tanggal, Pegawai dokter, Pegawai perawat) {
         Konsultasi konsultasi = new Konsultasi();
@@ -41,14 +40,14 @@ public class Pasien {
 
     public String getInfo() {
         String info = "";
-        info += "No RekamMedis      : " + this.noRekamMedis + "\n";
+        info += "No RekamMedis      : " + this.noRekamMedis + "\n"; // menampilkan identitas
         info += "Nama               : " + this.nama + "\n";
         
         if (!riwayatKonsultasi.isEmpty()) {
-            info += "Riwayat Konsultasi :\n";
+            info += "Riwayat Konsultasi :\n";   // cek
 
             for (Konsultasi konsultasi : riwayatKonsultasi) {
-                info += konsultasi.getInfo();
+                info += konsultasi.getInfo();   // dokter & perawat
             }
         } else {
             info += "Belum ada riwayat konsultasi";

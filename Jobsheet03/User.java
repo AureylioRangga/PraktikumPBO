@@ -7,6 +7,7 @@ public class User {
     public String alamat;
     public String pekerjaan;
 
+    // konstruktor
     public User(String username, String nama, String email) {
         this.username = username;
         this.nama = nama;

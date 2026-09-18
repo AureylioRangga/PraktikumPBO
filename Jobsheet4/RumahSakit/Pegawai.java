@@ -27,6 +27,7 @@ public void setNama(String nama) {
     this.nama = nama;
 }
 
+
 public String getInfo() {
     return nama + " (" + nip + ")";
 }

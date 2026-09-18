@@ -13,6 +13,7 @@ public class Anggota {
         this.jumlahPinjaman = 0;
     }
 
+    // 4 getter
     public String getNomorKTP() {
         return nomorKTP;
     }

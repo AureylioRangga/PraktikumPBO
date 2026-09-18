@@ -7,34 +7,33 @@ public class Konsultasi {
     private Pegawai dokter;
     private Pegawai perawat;
 
+
 public LocalDate getTanggal() { 
     return tanggal; 
-
 }
 public void setTanggal(LocalDate tanggal) {
     this.tanggal = tanggal; 
 }
 
+
 public Pegawai getDokter() {
     return dokter; 
 }
-
 public void setDokter(Pegawai dokter) {
     this.dokter = dokter; 
 }
-
 public Pegawai getPerawat() {
     return perawat; 
 }
-
 public void setPerawat(Pegawai perawat) { 
     this.perawat = perawat; 
 } 
 
+
 public String getInfo() {
     String info = "";
     info += "\tTanggal: " + tanggal;
-    info += ", Dokter: " + dokter.getInfo();
+    info += ", Dokter: " + dokter.getInfo(); // memanggil method class pegawai, karna dokter objek pegawai
     info += ", Perawat: " + perawat.getInfo();
     info += "\n";
 

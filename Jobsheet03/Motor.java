@@ -28,7 +28,7 @@ public class Motor {
     }
 
     
-    public boolean isIsMesinOn() {
+    public boolean isIsMesinOn() { // konvensi netbeans
         return isMesinOn;
     }
 
